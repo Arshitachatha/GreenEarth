@@ -1,0 +1,16 @@
+/* productlist.css */
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card img{
+    height: 195px;
+    width: 200px;
+}
+
+.product-card{
+    height: 60vh;
+    width: 50vh;
+}

@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "Sirin Stencil";
+    src: url('./Fonts/Stencil.ttf') format('truetype');
+}
+
+.navbar-style {
+    background-color: #0c8351 !important;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-style .navbar-title {
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+    color: white;
+    margin: 0;
+    text-align: center;
+    margin-left: 520px;
+    
+}
+
+.navbar-style .navbar-nav .nav-link {
+    color: white;
+    text-decoration: none;
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.navbar-style .navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
+
+.cart-text {
+    margin-right: 10px;
+}
+
+.cart-image {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    background-color: transparent;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+.sort-by-container {
+    margin-top: 0px;
+    margin-left: auto;
+    height: 10px;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    animation: fade-in 1s ease;
+}
+
+.product-card {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    animation: fade-in 0.5s ease;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-card h5 {
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-card p {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.product-card p:last-child {
+    margin-bottom: 10px;
+}
+
+.product-link-button {
+    padding: 10px 20px;
+    background-color: #0c8351;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+}
